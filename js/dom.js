@@ -15,7 +15,6 @@ var isEnabled = true;
 //   }
 // }
 
-
 //Kurzform des obene geschriebenen Codes 
 document.querySelector("#btn").addEventListener("click", () => {
   isEnabled ^= true;
@@ -23,10 +22,11 @@ document.querySelector("#btn").addEventListener("click", () => {
   if (isEnabled) {
       setTimeout(() => {
         document.querySelector("#btn").innerHTML = "Create Post";
-      }, 50 );
+      }, 35 );
   } else {
       setTimeout(() => {
         document.querySelector("#btn").innerHTML = "Hide";
-      }, 50);
+      }, 35);
   }
+
 });
