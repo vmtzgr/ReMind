@@ -1,17 +1,32 @@
 var isEnabled = true;
 
-function hide() {
+// function hide() {
+//   isEnabled ^= true;
+//   if (isEnabled) {
+//     var element = document.getElementById("blogs");
+//     element.classList.add("hidden");
+//     var btn = document.getElementById("btn");
+//     btn.innerHTML = "Create Post";
+//   } else {
+//     var element = document.getElementById("blogs");
+//     element.classList.remove("hidden");
+//     var btn = document.getElementById("btn");
+//     btn.innerHTML = "Hide";
+//   }
+// }
+
+
+//Kurzform des obene geschriebenen Codes 
+document.querySelector("#btn").addEventListener("click", () => {
   isEnabled ^= true;
+  document.querySelector(".blogs").classList.toggle("transform-active");
   if (isEnabled) {
-    var element = document.getElementById("blogs");
-    element.classList.add("hidden");
-    var btn = document.getElementById("btn");
-    btn.innerHTML = "Create Post";
+      setTimeout(() => {
+        document.querySelector("#btn").innerHTML = "Create Post";
+      }, 50 );
   } else {
-    var element = document.getElementById("blogs");
-    element.classList.remove("hidden");
-    var btn = document.getElementById("btn");
-    btn.innerHTML = "Hide";
+      setTimeout(() => {
+        document.querySelector("#btn").innerHTML = "Hide";
+      }, 50);
   }
-  
-}
+});
