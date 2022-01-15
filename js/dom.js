@@ -18,7 +18,7 @@ var isEnabled = true;
 //Kurzform des obene geschriebenen Codes 
 document.querySelector("#btn").addEventListener("click", () => {
   isEnabled ^= true;
-  document.querySelector(".blogs").classList.toggle("transform-active");
+  document.querySelector(".create-blogs").classList.toggle("transform-active");
   if (isEnabled) {
       setTimeout(() => {
         document.querySelector("#btn").innerHTML = "Create Post";

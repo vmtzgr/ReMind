@@ -18,16 +18,25 @@
             <div class="top">
                 <button id="btn" >Create Post</button>
             </div>
-            <div class="blogs hidden" id="blogs">
+            <div class="create-blogs hidden" id="blogs">
               <input type="text" name="header" id="header" placeholder="Title">
               <textarea name="body" id="body" cols="30" rows="5" placeholder="Start typing"></textarea>
               <button class="btn">Create</button>
             </div>
+            <div class="entries">
+              <h1>Latest Entries</h1>
+                <div class="blog-entrie">
+                  <h2>${post.title}</h2>
+                  <p>${post.body}</p>
+                  <div class="bottom">
+                      <p><small>${post.likes}</small></p>
+                      <button class="like-btn"><i class="far fa-thumbs-up"></i></button>
+                  </div>
+              </div>
+            </div>
         </div>
     </main>
-    <footer>
-        
-    </footer>
+    <script src="https://kit.fontawesome.com/f7c26fa211.js" crossorigin="anonymous"></script>
     <script src="js/dom.js"></script>
     <script src="js/index.js"></script>
 </body>
