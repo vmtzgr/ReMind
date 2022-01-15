@@ -15,18 +15,20 @@ var isEnabled = true;
 //   }
 // }
 
-//Kurzform des obene geschriebenen Codes 
-document.querySelector("#btn").addEventListener("click", () => {
+//Kurzform des obene geschriebenen Codes
+document.querySelector(".natz").addEventListener("click", () => {
   isEnabled ^= true;
   document.querySelector(".create-blogs").classList.toggle("transform-active");
   if (isEnabled) {
-      setTimeout(() => {
-        document.querySelector("#btn").innerHTML = "Create Post";
-      }, 35 );
+    setTimeout(() => {
+      document.querySelector(".natz").innerHTML =
+        '<i class="fas fa-plus-circle"></i>';
+    }, 35);
   } else {
-      setTimeout(() => {
-        document.querySelector("#btn").innerHTML = "Hide";
-      }, 35);
+    setTimeout(() => {
+      document.querySelector(".natz").innerHTML =
+        '<i class="fas fa-minus-circle"></i>';
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 35);
   }
-
 });
