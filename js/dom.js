@@ -1,21 +1,5 @@
 var isEnabled = true;
 
-// function hide() {
-//   isEnabled ^= true;
-//   if (isEnabled) {
-//     var element = document.getElementById("blogs");
-//     element.classList.add("hidden");
-//     var btn = document.getElementById("btn");
-//     btn.innerHTML = "Create Post";
-//   } else {
-//     var element = document.getElementById("blogs");
-//     element.classList.remove("hidden");
-//     var btn = document.getElementById("btn");
-//     btn.innerHTML = "Hide";
-//   }
-// }
-
-//Kurzform des obene geschriebenen Codes
 document.querySelector(".bttn").addEventListener("click", () => {
   isEnabled ^= true;
   document.querySelector(".create-blogs").classList.toggle("transform-active");
@@ -32,3 +16,5 @@ document.querySelector(".bttn").addEventListener("click", () => {
     }, 35);
   }
 });
+
+

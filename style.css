@@ -172,8 +172,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(205, 205, 205);
-  border-top: 1px solid grey;
+  background-color: rgb(238, 238, 238);
+  border-top: 1px solid rgb(160, 159, 159);
 }
 
 .bttn {
