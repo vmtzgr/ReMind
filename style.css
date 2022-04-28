@@ -9,6 +9,9 @@ body {
   font-size: 62.5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(242, 242, 247);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -174,6 +177,7 @@ footer {
   align-items: center;
   background-color: rgb(238, 238, 238);
   border-top: 1px solid rgb(160, 159, 159);
+  margin-top: auto;
 }
 
 .bttn {
@@ -186,4 +190,16 @@ footer {
   width: 30px;
   height: 30px;
   
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.del-btn{
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  border: 0;
 }
